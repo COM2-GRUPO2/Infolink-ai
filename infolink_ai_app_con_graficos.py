@@ -27,20 +27,24 @@ st.divider()
 # Sección 2: Indicador PIN
 st.header("📈 Indicador de Trading Informado (PIN)")
 pin_value = round(random.uniform(0.10, 0.30), 3)
-st.metric(label="Probabilidad de Informed Trading", value=f"{pin_value}")
+pin_valuee= pin_value*100
+st.metric(label="Probabilidad de Informed Trading", value=f"{pin_value} = {pin_valuee}")
 
 if pin_value < 0.15:
     st.warning("⚠️ Atención: Bajo nivel de decisiones informadas.")
 elif pin_value < 0.25:
     st.info("ℹ️ Nivel moderado. Seguir observando.")
 else:
-    st.success("✅ Buen nivel de información en el mercado.")
+    st.success("✅ Buen nivel de información en el mercado
+    
+st.markdown("Relación entre α y PIN ")
+
+img_formula = Image.open("grafico_formula_pin.png")
+st.image(img_formula, caption="Relación entre α y PIN", use_container_width=True)
 
 st.markdown("- α: tasa de traders con información (usuarios bien comunicados)")
 st.markdown("- ε: tasa de traders sin información (ruido)")
 
-img_formula = Image.open("grafico_formula_pin.png")
-st.image(img_formula, caption="Relación entre α y PIN", use_container_width=True)
 
 st.divider()
 
