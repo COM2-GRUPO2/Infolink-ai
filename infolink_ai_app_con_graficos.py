@@ -80,10 +80,10 @@ st.header("📊 Simulación del impacto de InfoLink AI")
 
 st.subheader("📈 Evolución del indicador PIN")
 img1 = Image.open("grafico_evolucion_pin.png")
-st.image(img1, caption="Evolución del PIN: sin vs con InfoLink AI",width=1000)
+st.image(img1, caption="Evolución del PIN: sin vs con InfoLink AI",width=900)
 
 st.subheader("📊 Comparación de desempeño entre grupos")
 img2 = Image.open("comparacion_grupoA_grupoB.png")
-st.image(img2, caption="Usuarios sin InfoLink AI vs con InfoLink AI", width=1000)
+st.image(img2, caption="Usuarios sin InfoLink AI vs con InfoLink AI", width=900)
 
 st.caption("Datos simulados para demostrar el impacto de la herramienta en la toma de decisiones.")
