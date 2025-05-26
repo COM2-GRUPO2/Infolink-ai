@@ -38,6 +38,17 @@ else:
 
 st.divider()
 
+# Mostrar fórmula y explicación del PIN
+st.markdown("### ¿Cómo se calcula el PIN?")
+st.latex(r"PIN \approx \frac{\alpha}{\alpha + \varepsilon}")
+st.markdown("- α: tasa de traders con información (usuarios bien comunicados)")
+st.markdown("- ε: tasa de traders sin información (ruido)")
+
+# Mostrar gráfico visual de cómo cambia el PIN con α
+from PIL import Image
+img_formula = Image.open("grafico_formula_pin.png")
+st.image(img_formula, caption="Relación entre α y PIN", use_container_width=True)
+
 # Sección 3: Recomendación automática simple
 st.header("🤖 Recomendación automática")
 fake_titles = [
