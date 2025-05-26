@@ -28,7 +28,7 @@ st.divider()
 st.header("📈 Indicador de Trading Informado (PIN)")
 pin_value = round(random.uniform(0.10, 0.30), 3)
 pin_valuee= pin_value*100
-st.metric(label="Probabilidad de Informed Trading", value=f"{pin_value} = {pin_valuee}")
+st.metric(label="Probabilidad de Informed Trading", value=f"{pin_value} = {pin_valuee}%")
 
 if pin_value < 0.15:
     st.warning("⚠️ Atención: Bajo nivel de decisiones informadas.")
