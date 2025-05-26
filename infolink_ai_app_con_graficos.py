@@ -35,7 +35,7 @@ if pin_value < 0.15:
 elif pin_value < 0.25:
     st.info("ℹ️ Nivel moderado. Seguir observando.")
 else:
-    st.success("✅ Buen nivel de información en el mercado
+    st.success("✅ Buen nivel de información en el mercado.")
     
 st.markdown("Relación entre α y PIN ")
 
