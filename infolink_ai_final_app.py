@@ -87,7 +87,7 @@ st.divider()
 st.header("📊 Simulación del impacto de InfoLink AI")
 
 st.subheader("📈 Evolución del indicador PIN")
-img1 = Image.open("grafico_evolucion_pin_v2.png")
+img1 = Image.open("grafico_evolucion_pin.png")
 st.image(img1, caption="Evolución del PIN: sin vs con InfoLink AI", use_container_width=True)
 
 st.subheader("📊 Comparación de desempeño entre grupos")
