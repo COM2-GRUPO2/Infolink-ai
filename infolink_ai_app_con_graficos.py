@@ -37,10 +37,10 @@ elif pin_value < 0.25:
 else:
     st.success("✅ Buen nivel de información en el mercado.")
     
-st.markdown("Relación entre α y PIN ")
+st.markdown("- Relación entre α y PIN ")
 
 img_formula = Image.open("grafico_formula_pin.png")
-st.image(img_formula, caption="Relación entre α y PIN", use_container_width=True)
+st.image(img_formula, caption="Relación entre α y PIN", width=900)
 
 st.markdown("- α: tasa de traders con información (usuarios bien comunicados)")
 st.markdown("- ε: tasa de traders sin información (ruido)")
